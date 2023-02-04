@@ -1,0 +1,6 @@
+{
+	"appId": "thomas.miller.testing",
+	"appName": "sveltekit-capacitor",
+	"webDir": "build",
+	"bundledWebRuntime": false
+}

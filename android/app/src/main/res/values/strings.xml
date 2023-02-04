@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">sveltekit-capacitor</string>
+    <string name="title_activity_main">sveltekit-capacitor</string>
+    <string name="package_name">thomas.miller.testing</string>
+    <string name="custom_url_scheme">thomas.miller.testing</string>
+</resources>
