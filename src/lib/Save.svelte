@@ -1,10 +1,24 @@
 <script>
 	import Loading from './Loading.svelte';
+	import { Filesystem, Directory } from '@capacitor/filesystem';
 
 	let name = '';
 	let greetMsg = '';
 	async function greet() {
-		console.log('test');
+		writeToFile('pinquest.txt', name);
+	}
+
+	async function writeToFile(fileName, content) {
+		try {
+			const file = await Filesystem.writeFile({
+				path: 'Download/' + fileName,
+				data: content,
+				directory: Directory.External
+			});
+			console.log('File written', file);
+		} catch (e) {
+			console.error('Unable to write file', e);
+		}
 	}
 </script>
 
