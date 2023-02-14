@@ -2,7 +2,7 @@
 	import Player from '$lib/Player.svelte';
 </script>
 
-<div class="flex h-screen flex-col justify-between">
+<div class="bg-red flex h-screen flex-col justify-between">
 	<div class="flex flex-1 rotate-180 flex-col justify-center p-4 text-center">
 		<Player playerNumber="1" />
 	</div>
